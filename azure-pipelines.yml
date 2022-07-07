@@ -3,12 +3,6 @@
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-- task: dependency-check-build-task@6
-  inputs:
-    projectName: 'escaneo'
-    scanPath: '**/*.csproj'
-    format: 'HTML'
-    failOnCVSS: '8'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
