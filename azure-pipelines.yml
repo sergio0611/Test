@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: InstallFortifySCA@7
+  inputs:
+    RunFortifyRulepackUpdate: false
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
