@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: dependency-check-build-task@6
+  inputs:
+    projectName: 'escaneo'
+    scanPath: '**/*'
+    format: 'HTML'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
