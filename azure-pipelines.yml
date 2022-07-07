@@ -1,4 +1,8 @@
 # Starter pipeline
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
 - task: dependency-check-build-task@6
   inputs:
     projectName: 'escaneo'
